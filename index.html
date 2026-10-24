@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Ngữ văn 9</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #e6ccff; /* tím nhạt */
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      text-align: center;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .icon {
+      margin-bottom: 30px;
+      padding: 6px; /* khoảng cách giữa viền và ảnh */
+      border-radius: 25px;
+      background: linear-gradient(45deg, #ff0000, #00ffcc, #0066ff, #ff00ff);
+      background-size: 400% 400%;
+      animation: gradientBorder 6s ease infinite;
+      display: inline-block;
+    }
+    .icon img {
+      width: 220px;
+      height: 220px;
+      border-radius: 20px; /* bo góc cho ảnh */
+      object-fit: cover;
+      display: block;
+    }
+    @keyframes gradientBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    h1 {
+      font-size: 40px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+      color: #444;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      max-width: 80%;
+    }
+    a.button {
+      display: inline-block;
+      padding: 16px 36px;
+      font-size: 22px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: background 0.3s, transform 0.2s;
+    }
+    a.button:hover {
+      background: #45a049;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <!-- Đổi đúng tên file ảnh -->
+      <img src="avatar.jpg" alt="Chatbot Icon">
+    </div>
+    <h1>👋 Chào em!</h1>
+    <p>Mình là <b>Trợ giảng AI Ngữ văn 9</b>, mời em mở Trợ giảng để
+      <span style="color: green; font-weight: bold;">tự học</span>.
+    </p>
+    <a class="button" href="https://gemini.google.com/gem/1j26L0RzjFumfuAGrd9JLAJe-Y46Nrz3Q?usp=sharing" target="_blank">🚀 Mở Trợ giảng Ngữ văn 9</a>
+  </div>
+</body>
+</html>
